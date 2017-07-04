@@ -1,0 +1,15 @@
+0.  It is the longestword in the English language published in a dictionary.
+1. Returns resource usage measures for its parameter 'who'
+2.  There are 16 members in a variable of type struct rusage.
+3.  because passing large structs by value is slow and takes up a lot of memory. If you're passing or returning structs by 
+    value, copies of those structs will get placed on the stack, potentially causing stack overflow.
+4.  Speller.c reads words from the file, character by character, using a for loop to begin reading the first character of 
+    the file, incrementing by one character until it reaches the end of the file. If the character is a letter or apostrophe,
+    it is added to a word. If the word becomes larger than what we have defined as the largest word possible, the word is
+    ignored. If the word has a digit, it is ignored as well.
+5.   fscanf with a format string like "%s" will read subsequent characters until a whitespace is found (whitespace characters are considered to be 
+    blank, newline and tab). Because words within the txt files sometimes end with punctuation, fscanf will view them as being part of the word, 
+    which complicates the reading procedure.
+6.   With const char* parameter, we prevent changes to the string that parameter is pointing at through parameter (i.e. const pointers prevent 
+    changing the data pointed to)/ The parameters for check (const char* word) and load (const char* dictionary) are declared as const pointers because
+    we want to prevent changes to a read word and the dictionary we are using.
